@@ -1,2 +1,1 @@
 # devrix-problems
-# devrix-projects
