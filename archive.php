@@ -28,7 +28,9 @@ $description = get_the_archive_description();
 		<?php get_template_part( 'template-parts/content/content', get_theme_mod( 'display_excerpt_or_full_post', 'excerpt' ) ); ?>
 	<?php endwhile; ?>
 
-	<?php twenty_twenty_one_the_posts_navigation(); ?>
+	<span class="nav-prev-text alignleft"><?php previous_posts_link( 'Previous Posts' ) ?></span>
+	<span class="nav-next-text alignright"><?php next_posts_link( 'Next Posts' ) ?></span>
+
 
 <?php else : ?>
 	<?php get_template_part( 'template-parts/content/content-none' ); ?>
