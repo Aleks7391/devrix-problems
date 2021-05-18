@@ -26,8 +26,10 @@ if ( have_posts() ) {
 	}
 
 	// Previous/next page navigation.
-	twenty_twenty_one_the_posts_navigation();
+	?>
+	<div class="nav-previous alignleft"><?php previous_posts_link( 'Older posts' ); ?></div>
 
+<?php
 } else {
 
 	// If no content, include the "No posts found" template.
