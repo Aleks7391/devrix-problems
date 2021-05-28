@@ -37,4 +37,11 @@ if ( have_posts() ) {
 
 }
 
+if ( is_active_sidebar( 'sidebar-students' ) ) { ?>
+	<aside class="widget-area right">
+		<?php dynamic_sidebar( 'sidebar-students' ); ?>
+	</aside>
+<?php 
+}
+
 get_footer();
