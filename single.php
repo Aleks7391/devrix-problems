@@ -15,8 +15,14 @@ get_header();
 while ( have_posts() ) :
 	the_post();
 
-	the_title( '<h1 class="entry-title">', '</h1>' );
-	the_content();
+	?>
+	<header class="entry-header alignwide">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header>
+	<div class="entry-content">
+		<?php the_content(); ?>
+	</div>
+	<?php
 	?><p>Publish date: <?php the_date(); ?></p>
 
 	<?php
